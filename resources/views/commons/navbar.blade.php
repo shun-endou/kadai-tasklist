@@ -11,6 +11,7 @@
             <ul class="navbar-nav">
 
             @if (Auth::check())
+                <li class="nav-item dropdown">
                 {{-- タスク作成ページへのリンク --}}
                 <li class="nav-item">{!! link_to_route('tasks.create', '新規タスクの投稿', [], ['class' => 'nav-link']) !!}</li>
                 {{-- ログアウトへのリンク --}}
